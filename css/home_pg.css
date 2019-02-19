@@ -1,0 +1,205 @@
+body{
+    font: 15px/1.5 'Patrick Hand', cursive;
+    padding: 0;
+    margin: 0;
+    background-color: #5CDB95;
+}
+/* Global */
+.container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+article#about-col{
+    float: right;
+    width: 65%;
+}
+aside#leftbar {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+.button_1{
+    height: 38px;
+    border: 0;
+    background: #021E27;
+    padding-left: 20px;
+    padding-right: 20px; 
+    color: #cccccc;
+}
+ul#orders li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #D8F6FF;
+}
+
+/* header */
+header{
+    background: #05386B;
+    color: #5CDB95;
+    padding: 25px 0 15px 0;
+    min-height: 70px;
+}
+header a{
+    color: #5CDB95;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #logo{
+    float: left;
+}
+header #logo h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px; 
+}
+header .brand{
+    color: #EDF5E1;
+    font-weight: bold;
+}
+header a:hover{
+    color: #379683;
+    font-weight: bold;
+}
+/* display */
+#display{
+    color: #05386B;
+    min-height: 600px;
+    background-image: url('../img/freepik.jpg'), url('../img/bkg.jpg');
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-attachment: scroll; 
+    background-size: 50% 90%;
+    background-position: center;
+    text-align: center;
+    text-shadow:
+    -1px -1px 0 #5CDB95,
+    1px -1px 0 #EDF5E1,
+    -1px 1px 0 #5CDB95,
+    1px 1px 0 #EDF5E1;
+}
+#display h1{
+    margin-top: 130px;
+    font-size: 55px;
+    margin-bottom: 10px; 
+}
+#display p{
+    font-size: 20px;
+}
+/* squares */
+#squares .box{
+    float: left;
+    color: #05386B;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+#squares .box img{
+    width: 90px;
+    border-radius: 30%;
+}
+/* footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #8EE4AF;
+    background-color: #05386B;
+    text-align: center;
+}
+/* Sign Up */
+
+* {box-sizing: border-box;}
+
+#signup {
+    color: #05386B;
+    padding-top: 60px;
+    min-height: 600px;
+    text-align: center;
+}
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.icon {
+  padding: 20px;
+  background: #05386B;
+  color: #5CDB95;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+    font: 15px/1.5 'Patrick Hand', cursive;
+    width: 100%;
+    padding: 15px;
+    outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid #05386B;
+}
+
+/* Set a style for the submit button */
+.btn {
+    font: 15px/1.5 'Patrick Hand', cursive;
+    background-color: #05386B;
+    color: #5CDB95;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+/* Admin dashboard */
+
+article a{
+    text-decoration: none;
+}
+
+.add-book {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* media queries */
+@media(max-width: 768px){
+    header #logo,
+    header nav,
+    header nav li,
+    #squares .box{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header{
+        padding-bottom: 20px; 
+    }
+    #display h1{
+        margin-top: 40px;
+    }
+}

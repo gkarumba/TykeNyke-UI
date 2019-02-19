@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Books</title>
+    <link rel="stylesheet" href="./css/home_pg.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo">
+                <h1>Adm<span class="brand">in</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign_up.html">Sign Up</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <article id="about-col">
+                <h1>Orders</h1>
+                <ul id="orders">
+                    <li>
+                        <a href="order_display_page.html"><h3>A carton of crayons</h3></a>
+                        <p>Sent from: Muthunguri</p>
+                        <p>status: Transit</p>
+                    </li>
+                    <li>
+                        <a href="order_display_page.html"><h3>'Autumn is here' monthly periodical</h3></a>
+                        <p>Sent from: Gilgil</p>
+                        <p>status: Transit</p>
+                    </li>
+                    <li>
+                        <a href="order_display_page.html"><h3>Two goats</h3></a>
+                        <p>Sent from: Isiolo</p>
+                        <p>status: Arrived</p>
+                    </li>
+                </ul>
+            </article>
+            <aside id="leftbar">
+                <h3>Place New Order</h3>
+                <form class="create">
+                    <div>
+                        <label>Title:</label>
+                        <input class="add-book" type="text" placeholder="item">
+                    </div>
+                    <div>
+                        <label>Price:</label>
+                        <input class="add-book" type="text" placeholder="Enter price in figures">
+                    </div>
+                    <div>
+                        <label>Pickup location:</label>
+                        <input class="add-book" type="text" placeholder="enter starting point">
+                    </div>
+                    <div>
+                        <label>Destination:</label>
+                        <input class="add-book" type="text" placeholder="enter destination">
+                    </div>
+                    <button class="button_1" type="submit">Create</button>
+                </form>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <p>Send-IT, Copyright &copy; 2018</p>
+    </footer>
+</body>
+</html>
