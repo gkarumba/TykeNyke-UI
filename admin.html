@@ -18,57 +18,59 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sign_up.html">Sign Up</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="index.html">Users</a></li>
+                    <li><a href="index.html">Logout</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section>
         <div class="container">
-            <article id="about-col">
-                <h1>Orders</h1>
-                <ul id="orders">
-                    <li>
-                        <a href="order_display_page.html"><h3>A carton of crayons</h3></a>
-                        <p>Sent from: Muthunguri</p>
-                        <p>status: Transit</p>
-                    </li>
-                    <li>
-                        <a href="order_display_page.html"><h3>'Autumn is here' monthly periodical</h3></a>
-                        <p>Sent from: Gilgil</p>
-                        <p>status: Transit</p>
-                    </li>
-                    <li>
-                        <a href="order_display_page.html"><h3>Two goats</h3></a>
-                        <p>Sent from: Isiolo</p>
-                        <p>status: Arrived</p>
-                    </li>
-                </ul>
-            </article>
             <aside id="leftbar">
                 <h3>Place New Order</h3>
                 <form class="create">
                     <div>
                         <label>Title:</label>
-                        <input class="add-book" type="text" placeholder="item">
+                        <input class="add-book" type="text" placeholder="Book title">
                     </div>
                     <div>
-                        <label>Price:</label>
-                        <input class="add-book" type="text" placeholder="Enter price in figures">
+                        <label>Author:</label>
+                        <input class="add-book" type="text" placeholder="Book author">
                     </div>
                     <div>
-                        <label>Pickup location:</label>
-                        <input class="add-book" type="text" placeholder="enter starting point">
+                        <label>Category:</label>
+                        <input class="add-book" type="text" placeholder="Book category">
                     </div>
-                    <div>
-                        <label>Destination:</label>
-                        <input class="add-book" type="text" placeholder="enter destination">
-                    </div>
-                    <button class="button_1" type="submit">Create</button>
+                    <button class="button_1" type="submit">Add book</button>
                 </form>
             </aside>
+            <article id="about-col">
+                <h1>Books</h1>
+                <button class="button_1" type="submit">View All Books</button>
+                <ul id="orders">
+                    <li>
+                        <a href="order_display_page.html"><h3>Book title</h3></a>
+                        <p>Author: John Doe</p>
+                        <p>Status: Pending</p>
+                        <p>Category: General</p>
+                        <p>Id: No.</p>
+                    </li>
+                    <li>
+                        <a href="order_display_page.html"><h3>Book title</h3></a>
+                        <p>Author: John Doe</p>
+                        <p>Status: Pending</p>
+                        <p>Category: General</p>
+                        <p>Id: No.</p>
+                    </li>
+                    <li>
+                        <a href="order_display_page.html"><h3>Book title</h3></a>
+                        <p>Author: John Doe</p>
+                        <p>Status: Pending</p>
+                        <p>Category: General</p>
+                        <p>Id: No.</p>
+                    </li>
+                </ul>
+            </article>
         </div>
     </section>
     <footer>
