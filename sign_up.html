@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html>   
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
 </head>
 <body>
     <header>
@@ -28,24 +29,25 @@
     <section id="signup">
         <div class="container">
             <form action="" style="max-width:500px;margin:auto">
+                <p id="registrationResponse"></p>
                 <h2>Sign Up Form</h2>
                 <div class="input-container">
                     <i class="fa fa-user icon"></i>
-                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                    <input id="registerUsername" class="input-field" type="text" placeholder="Username" name="usrnm">
                 </div>
                 <div class="input-container">
                     <i class="fa fa-envelope icon"></i>
-                    <input class="input-field" type="text" placeholder="Email" name="email">
+                    <input id="registerUserEmail" class="input-field" type="text" placeholder="Email" name="email">
                 </div>
                 <div class="input-container">
                     <i class="fa fa-key icon"></i>
-                    <input class="input-field" type="password" placeholder="Password" name="psw">
+                    <input id="registerUserPassword" class="input-field" type="password" placeholder="Password" name="psw">
                 </div>
                 <div class="input-container">
                     <i class="fa fa-key icon"></i>
-                    <input class="input-field" type="password" placeholder="Re-enter Password" name="psw">
+                    <input id="registerUserPassword1" class="input-field" type="password" placeholder="Re-enter Password" name="psw">
                 </div>
-                <button type="submit" class="btn">Register</button>
+                <button id="registerButton" type="button" class="btn">Register</button>
             </form>
         </div>
     </section>
@@ -53,5 +55,6 @@
     <footer>
         <p>Hello-Books, copyright &COPY; 2018</p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

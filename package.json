@@ -1,0 +1,19 @@
+{
+  "name": "karumba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipaullly/TykeNyke-UI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ipaullly/TykeNyke-UI/issues"
+  },
+  "homepage": "https://github.com/ipaullly/TykeNyke-UI#readme"
+}
