@@ -27,26 +27,27 @@
     <section>
         <div class="container">
             <aside id="leftbar">
-                <h3>Place New Order</h3>
+                <p id="addBookResponse"></p>
+                <h3>Add A New Book</h3>
                 <form class="create">
                     <div>
                         <label>Title:</label>
-                        <input class="add-book" type="text" placeholder="Book title">
+                        <input id="addTitle" class="add-book" type="text" placeholder="Book title">
                     </div>
                     <div>
                         <label>Author:</label>
-                        <input class="add-book" type="text" placeholder="Book author">
+                        <input id="addAuthor"class="add-book" type="text" placeholder="Book author">
                     </div>
                     <div>
                         <label>Category:</label>
-                        <input class="add-book" type="text" placeholder="Book category">
+                        <input id="addCategory" class="add-book" type="text" placeholder="Book category">
                     </div>
-                    <button class="button_1" type="submit">Add book</button>
+                    <button id="addBookButton" class="button_1" type="button">Add book</button>
                 </form>
             </aside>
             <article id="about-col">
                 <h1>Books</h1>
-                <button class="button_1" type="submit">View All Books</button>
+                <button class="button_1" type="button">View All Books</button>
                 <ul id="orders">
                     <li>
                         <a href="order_display_page.html"><h3>Book title</h3></a>
@@ -76,5 +77,6 @@
     <footer>
         <p>Send-IT, Copyright &copy; 2018</p>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>
