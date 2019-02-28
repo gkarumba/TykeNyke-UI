@@ -1,7 +1,8 @@
 
 const registerBtn = document.getElementById('registerButton');
-const loginBtn = document.getElementById('loginButton')
-const addBookBtn = document.getElementById('addBookButton')
+const loginBtn = document.getElementById('loginButton');
+const addBookBtn = document.getElementById('addBookButton');
+const viewBooksBtn = document.getElementById('viewBooksButton');
 // if(registerBtn){
 //     registerBtn.addEventListener('click',registerUser);
 // }
@@ -97,7 +98,7 @@ function addBook(){
     let author = document.getElementById('addAuthor').value;
     let category = document.getElementById('addCategory').value;
     let token = sessionStorage.getItem("token").replace("'","");
-    token = token.substr(0, token.length-1);
+    token = token.substr(0, token.length);
     fetch('https://tyche-nyke-mark-i.herokuapp.com/api/v2/books',{
         mode:'cors',
         method:'POST',
@@ -129,6 +130,52 @@ function addBook(){
     });
 }
 
+function viewBook(){
+    let output;
+    let booksList = "";
+    let token = sessionStorage.getItem("token").replace("'","");
+    token = token.substr(0, token.length);
+
+    fetch('https://tyche-nyke-mark-i.herokuapp.com/api/v2/books',{
+        mode:"cors",
+        method:"GET",
+        headers:{
+            Accept:'application/json',
+            "Access-Control-Allow-Origin": null,
+            'Content-Type':'application/json;charset=UTF-8',
+            "Authorization": "Bearer " + token
+        }
+    })
+    .then(async (res) => {
+        if (res.ok){
+            const myJson = await res.json();
+            booksList = myJson.books;
+            // console.log(booksList)
+            // booksList = booksList[Object.keys(booksList)[0]];
+            booksList.forEach((book) => {
+                output += `\n                    
+                <li>\n
+                <a href="#"><h3>${book.book_name}</h3></a>\n                        
+                <p>Author: ${book.author}</p>\n                        
+                <p>Status: ${book.status}</p>\n                        
+                <p>Category: ${book.category}</p>\n                        
+                <p>Id:${book.id}</p>\n                   
+                </li>\n                    
+                `;
+            });
+            // console.log(output)
+            // let message = `<p style="background: #004e00;color: white;text-align: center;padding: 20px;font-size: 1.3em;font-family: 'Boogaloo', cursive;">${myJson.message}</p>`;
+            // return document.getElementById("redirectedLogIn").innerHTML = message,
+            return document.getElementById("books").innerHTML = output;
+        }
+        if (res.status == 400){
+            const myJson_1 = await res.json();
+            output = `<p style="background: #004e00;color: white;text-align: center;padding: 20px;font-size: 1.3em;font-family: 'Boogaloo', cursive;">${myJson_1.message}</p>`;
+            return document.getElementById("redirectedLogIn").innerHTML = output;
+        }   
+    });
+}
+
 if(registerBtn){
     registerBtn.addEventListener('click',registerUser);
 }
@@ -137,4 +184,7 @@ if (loginBtn){
 }
 if(addBookBtn){
     addBookBtn.addEventListener('click',addBook);
+}
+if(viewBooksBtn){
+    viewBooksBtn.addEventListener('click',viewBook)
 }
